@@ -1,43 +1,54 @@
 //
-//  ViewController.swift
+//  TipViewController.swift
 //  TipPro
 //
-//  Created by nurzhan on 6/21/16.
+//  Created by nurzhan on 9/3/16.
 //  Copyright © 2016 Nurzhan. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class TipViewController: UIViewController  {
+    
+    
     @IBOutlet weak var billAmountField: UITextField!
+    
     @IBOutlet weak var tipSelector: UISegmentedControl!
-    @IBOutlet weak var tipAmountField: UITextField!
-    @IBOutlet weak var totalAmountField: UITextField!
-   
+    
+    @IBOutlet weak var tipAmountLabel: UILabel!
+    
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
+        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // setting placeholder text font
+        
+        billAmountField.attributedPlaceholder = NSAttributedString(string:"0", attributes: [NSForegroundColorAttributeName: UIColor.whiteColor()])
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func calculateTip(sender: AnyObject) {
+                guard let billAmount = Double(billAmountField.text!) else {
+                    //show error
+                    billAmountField.text = ""
+                    tipAmountLabel.text = ""
+                    totalAmountLabel.text = ""
+                    return
         
-        guard let billAmount = Double(billAmountField.text!) else {
-            //show error
-            billAmountField.text = ""
-            tipAmountField.text = ""
-            totalAmountField.text = ""
-            return
-        }
+    }
+    
         
         var tipPercentage = 0.0
         
@@ -51,7 +62,7 @@ class ViewController: UIViewController {
         default:
             break
         }
-        
+    
         let roundedBillAmount = round(100*billAmount)/100
         let tipAmount = roundedBillAmount * tipPercentage
         let roundedTipAmount = round(100*tipAmount)/100
@@ -60,10 +71,8 @@ class ViewController: UIViewController {
         if (!billAmountField.editing) {
             billAmountField.text = String(format: "%.2f", roundedBillAmount)
         }
-        tipAmountField.text = String(format: "%.2f", roundedTipAmount)
-        totalAmountField.text = String(format: "%.2f", totalAmount)
-    
+        tipAmountLabel.text = String(format: "%.2f", roundedTipAmount)
+        totalAmountLabel.text = String(format: "%.2f", totalAmount)
+        
     }
-
 }
-
