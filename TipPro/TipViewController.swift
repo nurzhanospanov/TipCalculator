@@ -20,6 +20,8 @@ class TipViewController: UIViewController  {
     
     @IBOutlet weak var totalAmountLabel: UILabel!
     
+    @IBOutlet weak var calculateButton: UIButton!
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
         
@@ -30,8 +32,12 @@ class TipViewController: UIViewController  {
         // setting placeholder text font
         
         billAmountField.attributedPlaceholder = NSAttributedString(string:"0", attributes: [NSForegroundColorAttributeName: UIColor.whiteColor()])
+        // setting calculate button frame
+        calculateButton.backgroundColor = UIColor.clearColor()
+        calculateButton.layer.cornerRadius = 1
+        calculateButton.layer.borderWidth = 2
+        calculateButton.layer.borderColor = UIColor.whiteColor().CGColor
         
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
