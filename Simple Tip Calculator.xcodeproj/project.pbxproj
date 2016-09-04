@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		740216BA1D7B617C00151D95 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740216B91D7B617C00151D95 /* TipViewController.swift */; };
 		740216BC1D7B638E00151D95 /* Stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 740216BB1D7B638E00151D95 /* Stroke.png */; };
+		740216BE1D7BAE3000151D95 /* Tip Calculator icon Parent.png in Resources */ = {isa = PBXBuildFile; fileRef = 740216BD1D7BAE3000151D95 /* Tip Calculator icon Parent.png */; };
 		740FE4711D19B44E0032042E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740FE4701D19B44E0032042E /* AppDelegate.swift */; };
 		740FE4761D19B44E0032042E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740FE4741D19B44E0032042E /* Main.storyboard */; };
 		740FE4781D19B44E0032042E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740FE4771D19B44E0032042E /* Assets.xcassets */; };
@@ -18,7 +19,8 @@
 /* Begin PBXFileReference section */
 		740216B91D7B617C00151D95 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		740216BB1D7B638E00151D95 /* Stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stroke.png; path = Images/Stroke.png; sourceTree = "<group>"; };
-		740FE46D1D19B44E0032042E /* TipPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		740216BD1D7BAE3000151D95 /* Tip Calculator icon Parent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tip Calculator icon Parent.png"; path = "Tip Calculator icons/Tip Calculator icon Parent.png"; sourceTree = "<group>"; };
+		740FE46D1D19B44E0032042E /* Simple Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		740FE4701D19B44E0032042E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		740FE4751D19B44E0032042E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		740FE4771D19B44E0032042E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		740FE46E1D19B44E0032042E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				740FE46D1D19B44E0032042E /* TipPro.app */,
+				740FE46D1D19B44E0032042E /* Simple Tip Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +64,7 @@
 				740FE4771D19B44E0032042E /* Assets.xcassets */,
 				740FE4791D19B44E0032042E /* LaunchScreen.storyboard */,
 				740FE47C1D19B44E0032042E /* Info.plist */,
+				740216BD1D7BAE3000151D95 /* Tip Calculator icon Parent.png */,
 				740216BB1D7B638E00151D95 /* Stroke.png */,
 			);
 			path = TipPro;
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		740FE46C1D19B44E0032042E /* TipPro */ = {
+		740FE46C1D19B44E0032042E /* Simple Tip Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 740FE47F1D19B44E0032042E /* Build configuration list for PBXNativeTarget "TipPro" */;
+			buildConfigurationList = 740FE47F1D19B44E0032042E /* Build configuration list for PBXNativeTarget "Simple Tip Calculator" */;
 			buildPhases = (
 				740FE4691D19B44E0032042E /* Sources */,
 				740FE46A1D19B44E0032042E /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = TipPro;
+			name = "Simple Tip Calculator";
 			productName = TipPro;
-			productReference = 740FE46D1D19B44E0032042E /* TipPro.app */;
+			productReference = 740FE46D1D19B44E0032042E /* Simple Tip Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,11 +102,11 @@
 				TargetAttributes = {
 					740FE46C1D19B44E0032042E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 985ZFPSWV3;
+						DevelopmentTeam = 2CTMX86W25;
 					};
 				};
 			};
-			buildConfigurationList = 740FE4681D19B44E0032042E /* Build configuration list for PBXProject "TipPro" */;
+			buildConfigurationList = 740FE4681D19B44E0032042E /* Build configuration list for PBXProject "Simple Tip Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				740FE46C1D19B44E0032042E /* TipPro */,
+				740FE46C1D19B44E0032042E /* Simple Tip Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +133,7 @@
 				740216BC1D7B638E00151D95 /* Stroke.png in Resources */,
 				740FE4781D19B44E0032042E /* Assets.xcassets in Resources */,
 				740FE4761D19B44E0032042E /* Main.storyboard in Resources */,
+				740216BE1D7BAE3000151D95 /* Tip Calculator icon Parent.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +258,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.nurzhan.TipPro;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Simple Tip Calculator";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -268,20 +275,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.nurzhan.TipPro;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Simple Tip Calculator";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		740FE4681D19B44E0032042E /* Build configuration list for PBXProject "TipPro" */ = {
+		740FE4681D19B44E0032042E /* Build configuration list for PBXProject "Simple Tip Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				740FE47D1D19B44E0032042E /* Debug */,
@@ -290,7 +300,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		740FE47F1D19B44E0032042E /* Build configuration list for PBXNativeTarget "TipPro" */ = {
+		740FE47F1D19B44E0032042E /* Build configuration list for PBXNativeTarget "Simple Tip Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				740FE4801D19B44E0032042E /* Debug */,

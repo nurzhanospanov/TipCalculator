@@ -16,7 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tip Calculator icon Parent.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zfp-6u-P4g">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="SBl-cq-ATv"/>
+                                    <constraint firstAttribute="height" constant="50" id="nft-mU-PLt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zfp-6u-P4g" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Qi2-Nq-H9c"/>
+                            <constraint firstItem="Zfp-6u-P4g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="g0j-d4-WGj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tip Calculator icon Parent.png" width="1536" height="1536"/>
+    </resources>
 </document>

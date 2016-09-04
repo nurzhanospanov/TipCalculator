@@ -66,7 +66,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-50-8Pb" userLabel="Tip amount">
-                                <rect key="frame" x="535" y="337" width="24.5" height="48"/>
+                                <rect key="frame" x="535.5" y="337" width="24.5" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="49z-sP-Fzj"/>
                                     <constraint firstAttribute="height" constant="47" id="Eox-oe-fvR"/>
@@ -90,7 +90,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoS-yx-aTB" userLabel="Total amount">
-                                <rect key="frame" x="533" y="412" width="26.5" height="48"/>
+                                <rect key="frame" x="533.5" y="412" width="26.5" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="cIj-XD-Lck"/>
                                     <constraint firstAttribute="width" constant="90" id="qGJ-wW-xO8"/>
@@ -109,14 +109,6 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stroke.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hP-0n-XWv">
                                 <rect key="frame" x="41" y="409.5" width="519" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="279" id="FOa-OZ-PKg"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="FOa-OZ-PKg"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PZA-sd-H6r">
                                 <rect key="frame" x="170" y="177" width="140" height="29"/>
@@ -141,8 +133,8 @@
                                     <action selector="calculateTip:" destination="9p2-CI-X69" eventType="valueChanged" id="1qN-tf-372"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUL-rL-hb1">
-                                <rect key="frame" x="460" y="117" width="100" height="36"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUL-rL-hb1">
+                                <rect key="frame" x="450" y="117" width="110" height="36"/>
                                 <color key="backgroundColor" red="0.69803921568627447" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -152,11 +144,11 @@
                                     <constraint firstAttribute="height" constant="35" id="MXz-kC-gpS"/>
                                     <constraint firstAttribute="height" constant="35" id="Yp6-cj-oZs"/>
                                     <constraint firstAttribute="width" constant="220" id="ckL-zx-cPh"/>
-                                    <constraint firstAttribute="width" constant="100" id="iKk-9n-DyU"/>
+                                    <constraint firstAttribute="width" constant="110" id="iKk-9n-DyU"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="5ZJ-Ee-UZk"/>
